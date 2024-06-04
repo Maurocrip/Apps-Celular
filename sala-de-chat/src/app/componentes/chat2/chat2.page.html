@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button (click)="Volver()" class="vuelta" mode="ios" slot="start">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title mode="ios">PPS-4B</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #content [fullscreen]="true">
+  <div class="background">
+    <div class="mensajes">
+      <div *ngFor="let mensaje of arrayMensajes">
+        <div *ngIf="mensaje.Usuario != global.user; else elseBlock" class="centrar centrarTuyo">
+          <div class="chat chatTuyo">
+            <h5>{{mensaje.Usuario}}</h5>
+            <label class="mensaje">{{mensaje.Texto}}</label>
+            <div class="smallDiv">
+              <small>{{mensaje.Fecha}} {{mensaje.Hora | tiempo}}</small>
+            </div>
+          </div>
+        </div>
+        <ng-template #elseBlock>
+          <div>
+            <div class="centrar centrarMio">
+              <div class="chat chatMio">
+                <label class="mensaje">{{mensaje.Texto}}</label>
+                <div class="smallDiv">
+                  <small>{{mensaje.Fecha}} {{mensaje.Hora | tiempo}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </div>
+      <!-- Añadimos un div con referencia #scrollAnchor al final de los mensajes -->
+      <div #scrollAnchor></div>
+    </div>
+    <div class="enviar">
+      <textarea id="input" placeholder="Text"></textarea>
+      <button class="boton" (click)="Guardar()">Enviar</button>
+    </div>
+  </div>
+</ion-content>

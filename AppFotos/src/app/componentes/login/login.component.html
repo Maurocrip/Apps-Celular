@@ -1,0 +1,67 @@
+
+<div class="background">
+  
+  <ion-fab slot="fixed" vertical="top" horizontal="end" >
+    <ion-fab-button>
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="Rellenar('admin@admin.com','111111')">
+        <ion-icon  name="man-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="Rellenar('invitado@invitado.com','222222')">
+        <ion-icon name="man"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button  (click)="Rellenar('usuario@usuario.com','333333')">
+        <ion-icon name="woman-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="Rellenar('anonimo@anonimo.com','444444')">
+        <ion-icon name="woman"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button (click)="Rellenar('tester@tester.com','555555')">
+        <ion-icon name="eye-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
+  <div class="imagen">
+    <img src="../../../assets/Icono.png">
+  </div>
+
+  <div class="formulario">
+    <h1>Inisiar Sesión</h1>
+    <form [formGroup]="grupo">
+
+      <div class="opciones">
+        <div class="medio">
+          <ion-icon class="iconEmail" name="mail-outline"></ion-icon>
+          <input formControlName="email" [(ngModel)]="email" placeholder="correo electronico" type="text">
+        </div>
+        <div>
+          <small *ngIf="grupo.controls['email'].errors?.['required'] && grupo.controls['email'].touched ">
+            Falta correo electronico
+          </small>
+          <small *ngIf="grupo.controls['email'].errors?.['email'] && grupo.controls['email'].touched">
+            Su correo debe incluir "&#64;" y no terminar en "."
+          </small>
+        </div>
+      </div>
+
+      <div class="opciones">
+        <div class="medio">
+          <ion-icon class="iconContra" name="lock-closed-outline"></ion-icon>
+          <input formControlName="contraseña" [(ngModel)]="contra" placeholder="Contraseña" type="password">
+        </div>
+        <div>
+          <small *ngIf="grupo.controls['contraseña'].errors?.['required'] && grupo.controls['contraseña'].touched ">
+            Falta contraseña
+          </small>
+        </div>
+      </div>
+
+      <div class="boton">
+        <button (click)="LogIn()">Ingresar</button>
+      </div>
+    </form>
+  </div>
+</div>

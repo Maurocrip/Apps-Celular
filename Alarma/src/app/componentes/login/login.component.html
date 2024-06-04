@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title mode="ios"> Iniciar sesión </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="general">
+  <div class="backGound">
+    <div class="avatar">
+      <div class="image">
+        <ion-label>admin</ion-label>
+        <ion-avatar (click)="Rellenar('admin@admin.com','111111')"><img src="../../../assets/mujer2.png"></ion-avatar>
+      </div>
+      <div class="image">
+        <ion-label>usuario</ion-label>
+        <ion-avatar (click)="Rellenar('usuario@usuario.com','333333')"><img src="../../../assets/hombre.png"></ion-avatar>
+      </div>
+      <div class="image">
+        <ion-label>tester</ion-label>
+        <ion-avatar (click)="Rellenar('tester@tester.com','555555')"><img src="../../../assets/mujer.png"></ion-avatar>
+      </div>
+      <div class="image">
+        <ion-label>anonimo</ion-label>
+        <ion-avatar (click)="Rellenar('anonimo@anonimo.com','444444')"><img src="../../../assets/persona.png"></ion-avatar>
+      </div>
+      <div class="image">
+        <ion-label>invitado</ion-label>
+        <ion-avatar (click)="Rellenar('invitado@invitado.com','222222')"><img src="../../../assets/mujer3.png"></ion-avatar>
+      </div>
+      
+    </div>
+    <div class="formulario">
+      <form [formGroup]="grupo">
+
+        <ion-input fill="outline" mode="md" errorText="Formato de Correo Electrónico invalido" [(ngModel)]="email" ngModel email formControlName="email" label-placement="floating"  label="Correo Electrónico" [clearInput]="true" placeholder="micorreo@hotmail.com"></ion-input>
+
+        <ion-input fill="outline" mode="md" errorText="Falta contraseña" formControlName="contraseña" [(ngModel)]="contra" label-placement="floating"  label="contraseña" type="password" placeholder="micontraseña"></ion-input>
+
+
+        <ion-button (click)="LogIn()">Ingresar</ion-button>
+
+      </form>
+    </div>
+    <div class="downside">
+      <ion-label style="color: black;">Alarma antirobos</ion-label>
+      <img class="icono" src="../../../assets/icon/Icono.png">
+    </div>
+  </div>
+
+</ion-content>

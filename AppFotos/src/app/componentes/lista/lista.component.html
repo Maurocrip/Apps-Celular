@@ -1,0 +1,15 @@
+<div class="background" *ngIf="this.tipo=='feas'">
+  <h1>COSAS FEA</h1>
+  <div *ngFor="let foto of this.global.arrayFotosFeas">
+    <app-fotos [tipo]="this.tipo" [foto]="foto"></app-fotos>
+    <hr>
+  </div>
+</div>
+
+<div class="background" *ngIf="this.tipo=='lindas'">
+  <h1>COSAS LINDA</h1>
+  <div *ngFor="let foto of this.global.arrayFotosLindas">
+    <app-fotos [tipo]="this.tipo" [foto]="foto"></app-fotos>
+    <hr>
+  </div>
+</div>

@@ -1,0 +1,171 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.backGround
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.titulo
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 49%;
+  width: 100%;
+}
+
+//------------------------------------FACIL------------------------------------------------------------------------
+
+.tituloTablaF
+{
+  background-color: #390094;
+}
+
+.subTituloF
+{
+  background-color: #250057;
+}
+
+.filasF
+{
+  background-color: #57007b;
+}
+
+//------------------------------------MEDIO------------------------------------------------------------------------
+
+.tituloTablaM
+{
+  background-color: #720026;
+}
+
+.subTituloM
+{
+  background-color: #b72f44;
+}
+
+.filasM
+{
+  background-color: #8b3300;
+}
+
+//------------------------------------DIFICIL------------------------------------------------------------------------
+.tituloTablaD
+{
+  background-color: #002511;
+}
+
+.subTituloD
+{
+  background-color: #005500;
+}
+
+.filasD
+{
+  background-color: #287d00;
+}
+//----------------------------------------------------------------------------------------------------------------------------------------
+ion-col {
+  border: solid 1px #fff;
+  color: #fff;
+  text-align: center;
+  --ion-grid-column-padding: 3%
+}
+
+button
+{
+  font-size: xx-large;
+  height: 20%;
+  width: 100%;
+}
+
+.Dificultad
+{
+  display: flex;
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+//--------------carrusel
+.carrusel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.carousel
+{
+  margin-top: 3%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-slide
+{
+  width: 85%;
+  display: none;
+}
+
+.table-slide.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1; 
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+

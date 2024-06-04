@@ -1,0 +1,7 @@
+{
+  "name": "Sala de Chat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

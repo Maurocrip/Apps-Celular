@@ -1,0 +1,26 @@
+
+<ion-content >
+  <div class="bacground">
+    <form [formGroup]="grupo" class="general">
+        <h3>JUEGO DIDÁCTICO</h3>
+        <img src="../../../assets/icon/Icono.png" class="imagen">
+
+        <h3>INICIAR SESIÓN</h3>
+
+        <ion-input fill="solid" mode="md" errorText="Formato de Correo Electrónico invalido" [(ngModel)]="email" ngModel email formControlName="email" label="Correo Electrónico" [clearInput]="true" placeholder="miCorreo@hotmail.com"></ion-input>
+
+        <ion-input fill="solid" class="flag" mode="md" errorText="Falta contraseña" formControlName="contraseña" [(ngModel)]="contra" label="contraseña" type="password" placeholder="micontraseña">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+
+        <ion-button (click)="LogIn()">loguearme</ion-button>
+    </form>
+    <div class="accesoRapido">
+      <ion-button (click)="Rellenar('admin@admin.com','111111')" shape="round">1</ion-button>
+      <ion-button (click)="Rellenar('invitado@invitado.com','222222')" shape="round">2</ion-button>
+      <ion-button (click)="Rellenar('usuario@usuario.com','333333')" shape="round">3</ion-button>
+      <ion-button (click)="Rellenar('anonimo@anonimo.com','444444')" shape="round">4</ion-button>
+      <ion-button (click)="Rellenar('tester@tester.com','555555')" shape="round">5</ion-button>
+    </div>
+  </div>
+</ion-content>

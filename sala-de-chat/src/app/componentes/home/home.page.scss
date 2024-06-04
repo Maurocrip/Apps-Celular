@@ -1,0 +1,72 @@
+ion-icon 
+{
+    font-size: 24px;
+    color: #73849a;
+    padding: 0px 0px 0px 10px;
+}
+
+ion-button
+{
+    font-family: cursive;
+}
+
+ion-title
+{
+    padding: 0px 0px 0px 10px;
+}
+
+.menu
+{
+    width: 100%;
+    --background: transparent;
+    --box-shadow: none;
+}
+
+.imagenes
+{
+    max-width: 98%;
+    max-height: 90%;
+}
+
+.boton
+{
+    color: white;
+    width: 96%;
+    height: 48%;
+    font-size: xx-large;
+}
+
+.botonP
+{
+    background: #480072;
+}
+
+.botonS
+{
+    background-color: #023e8a;
+}
+
+.botones
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.logOut
+{
+    --background: #00567f;
+    --border-radius: 50%;
+    padding: 0px 10px 0px 0px;
+}
+
+label
+{
+    color: white;
+    font-family: cursive;
+}
+

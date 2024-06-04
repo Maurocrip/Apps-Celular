@@ -1,0 +1,51 @@
+<div >
+  <ion-button *ngFor="let item of arrayOpcion" (click)="Sonido(item.opcion)" class="botones">
+    <img src={{item.path}} alt="">
+  </ion-button>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end">
+    <ion-fab-button (click)="LogOut()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-fab slot="fixed" vertical="top" horizontal="start">
+    <ion-fab-button>
+      <img src={{this.idiomaPathBoton}} alt="">
+    </ion-fab-button>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="Idioma('castellano')">
+        <img src="../../../assets/Banderas/Mexico.png" alt="">
+      </ion-fab-button>
+      <ion-fab-button (click)="Idioma('ingles')">
+        <img src="../../../assets/Banderas/EstadosUnidos.png" alt="">
+      </ion-fab-button>
+      <ion-fab-button (click)="Idioma('brasilero')">
+        <img src="../../../assets/Banderas/brasil.png" alt="">
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab slot="fixed" vertical="center" horizontal="end">
+    <ion-fab-button>
+      <img src={{this.temaPathBoton}} alt="">
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button (click)="Tema('annimal')">
+        <img src="../../../assets/tema/cerdo.png" alt="">
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button (click)="Tema('color')">
+        <img src="../../../assets/tema/colores.png" alt="">
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button (click)="Tema('numero')">
+        <img src="../../../assets/tema/numeros.png" alt="">
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  
+</div>

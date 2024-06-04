@@ -1,0 +1,36 @@
+.backGround
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.buttonFacil
+{
+    height: 30%;
+    background: transparent;
+    width: 40%;
+}
+
+.buttonMedio
+{
+    height: 18%;
+    background: transparent;
+    width: 38%;
+}
+.buttonDificil
+{
+    height: 15%;
+    background: transparent;
+    width: 32%;
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+}

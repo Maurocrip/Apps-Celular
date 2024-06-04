@@ -1,0 +1,94 @@
+.bacground{
+  height: 100%;
+  background-color: rgb(110 195 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.imagen
+{
+    max-height: 500px;
+}
+.icono
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nombre
+{
+    width: 100%;
+    background-color: rgb(0 110 143);
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif !important;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+}
+
+.fade-out {
+	-webkit-animation: fade-out 5s ease-in both;
+	        animation: fade-out 5s ease-in both;
+}
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    70%{
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  //----------------------ANIMACION NOMBRE----------------------------------------------------------------------------------------------------------------------
+  .slide-out-left {
+    -webkit-animation: slide-out-left 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: slide-out-left 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  }
+
+@keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+//------------------------------animacion divicion-----------------------------------------------------------------------------------------------------------------------------
+.slide-out-right {
+	-webkit-animation: slide-out-right 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-right 4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+}

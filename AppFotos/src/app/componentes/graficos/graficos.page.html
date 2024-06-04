@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-toggle style="width: 13%;" slot="start">
+      <ion-button class="menu">
+        <ion-icon aria-hidden="true" slot="start" name="menu-outline" size="10px"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+    <ion-title>Estadisticas</ion-title>
+    <ion-button class="logOut" (click)="this.global.LogOut()" slot="end">Cerrar Sesión</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="fondo">
+    <div *ngIf="this.grafico == 1" class="graficoTorta" >
+      <div class="titulo" >
+        <h2>Grafico Cosas Lindas</h2>
+      </div>
+      <div class="torta" id="GraficoLindas" style="width: 350px; height: 550px; "></div>
+      <div class="divBoton">
+        <button class="boton" (click)="Cambiar()">Grafico feas</button>
+      </div>
+    </div>
+    <div *ngIf="this.grafico == 2" class="GraficoBarras">
+      <div class="tituloDias">
+        <div class="titulo">
+          <h2>Grafico Cosas Feas</h2>
+        </div>
+      </div>
+      <div id="GraficoFeas" style="width: 300px; height: 550px; "></div>
+      <div class="divBoton">
+        <button class="boton" (click)="Cambiar()">Grafico Lindas</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

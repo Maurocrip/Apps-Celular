@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-toggle style="width: 13%;" slot="start">
+      <ion-button class="menu">
+        <ion-icon aria-hidden="true" slot="start" name="menu-outline" size="10px"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+    <ion-title>Fotos</ion-title>
+    <ion-button class="logOut" (click)="this.global.LogOut()" slot="end">Cerrar Sesión</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div *ngIf="this.formato == ''; else elseBlock" class="botones">
+    <button (click)="TomarFoto('lindas')" class="boton">
+      <label>Cosas lindas</label>
+    <img class="imagenes" src="../../../assets/Botones/Lindas.jpg" alt="">
+    </button>
+    <button (click)="TomarFoto('feas')" style="background-color: #005273;" class="boton">
+      <label>Cosas feas</label>
+      <img class="imagenes" src="../../../assets/Botones/feas.png" alt="">
+    </button>
+  </div>
+
+  <ng-template #elseBlock>
+    <app-lista [tipo]="this.formato"></app-lista>
+  </ng-template>
+</ion-content>

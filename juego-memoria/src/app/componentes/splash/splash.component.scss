@@ -1,0 +1,107 @@
+.bacground{
+    height: 100%;
+    background-color:rgb(139 104 161);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.imagen
+{
+    max-height: 500px;
+}
+.icono
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.nombre
+{
+    width: 100%;
+    background-color: rgb(127 34 185);
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif !important;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+}
+//------animacion---------
+
+.swing-out-top-bck {
+	-webkit-animation: swing-out-top-bck 5s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: swing-out-top-bck 5s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+@keyframes swing-out-top-bck {
+    50% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+    60% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(-100deg);
+                transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+                transform-origin: top;
+        opacity: 0;
+      }
+  }
+  .swing-out-bottom-bck {
+	-webkit-animation: swing-out-bottom-bck 5s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: swing-out-bottom-bck 5s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+  @keyframes swing-out-bottom-bck {
+    65% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 1;
+    }
+    75% {
+      -webkit-transform: rotateX(100deg);
+              transform: rotateX(100deg);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+      opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(100deg);
+                transform: rotateX(100deg);
+        -webkit-transform-origin: bottom;
+                transform-origin: bottom;
+        opacity: 0;
+      }
+  }
+
+  .flip-out-hor-top {
+	-webkit-animation: flip-out-hor-top 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: flip-out-hor-top 5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes flip-out-hor-top {
+    80% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateX(70deg);
+              transform: rotateX(70deg);
+      opacity: 0;
+    }
+  }
+  
+  
+  

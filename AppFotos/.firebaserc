@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "appfotos-fda97": {
+      "hosting": {
+        "app": [
+          "appfotos-fda97"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "appfotos-fda97"
+  }
+}

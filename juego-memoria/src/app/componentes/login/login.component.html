@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title mode="ios">
+      Iniciar Sesión
+    </ion-title>
+    <ion-button class="boton" id="open-modal" expand="block">+</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="grupo" class="general">
+
+    <ion-list class="centro">
+      <ion-item lines="none" class="boddy" >
+        <ion-icon slot="start" name="mail"></ion-icon>
+        <ion-input formControlName="email" [(ngModel)]="email"  placeholder="Correo Electrónico"></ion-input>
+      </ion-item>
+      <small *ngIf="grupo.controls['email'].errors?.['required'] && grupo.controls['email'].touched ">
+          Falta Correo
+      </small>
+      <small *ngIf="grupo.controls['email'].errors?.['email'] && grupo.controls['email'].touched">
+        Su Correo debe incluir "&#64;" y no terminar en "."
+      </small>
+  
+      <ion-item lines="none" class="boddy" >
+        <ion-icon slot="start" name="lock-closed"></ion-icon>
+        <ion-input formControlName="contraseña" [(ngModel)]="contra" type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <small *ngIf="grupo.controls['contraseña'].errors?.['required'] && grupo.controls['contraseña'].touched ">
+          Falta contraseña
+      </small>
+    </ion-list>
+
+    <div class="downside">
+      <ion-label style="color: black;">Juego de memoria</ion-label>
+      <img class="icono" src="../../../assets/icon/Icono.png">
+    </div>
+
+      <ion-button class="login" (click)="LogIn()">Ingresar</ion-button>
+    
+  </form>
+
+  <ion-modal #modal trigger="open-modal">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title>Usuarios</ion-title>
+          <ion-buttons slot="end">
+            <ion-button color="white" (click)="modal.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-list>
+          <ion-radio-group value="strawberries">
+
+            <ion-item (click)="AutoCompletar('admin@admin.com','111111')">
+              <ion-avatar slot="start">
+                <ion-img src="../../assets/Avatar/mujer1.jpg"></ion-img>
+              </ion-avatar>
+              <ion-label>
+                <h2>Admin</h2>
+              </ion-label>
+              <ion-radio></ion-radio>
+              </ion-item>
+              <ion-item (click)="AutoCompletar('invitado@invitado.com','222222')">
+                <ion-avatar slot="start">
+                  <ion-img src="../../assets/Avatar/mujer2.jpg"></ion-img>
+                </ion-avatar>
+                <ion-label>
+                  <h2>Invitado</h2>
+                </ion-label>
+                <ion-radio></ion-radio>
+                </ion-item>
+                <ion-item (click)="AutoCompletar('usuario@usuario.com','333333')">
+                  <ion-avatar slot="start">
+                    <ion-img src="../../assets/Avatar/hombre1.jpg"></ion-img>
+                  </ion-avatar>
+                  <ion-label>
+                    <h2>Usuario</h2>
+                  </ion-label>
+                  <ion-radio></ion-radio>
+                  </ion-item>
+                  <ion-item (click)="AutoCompletar('anonimo@anonimo.com','444444')">
+                    <ion-avatar slot="start">
+                      <ion-img src="../../assets/Avatar/hombre2.jpg"></ion-img>
+                    </ion-avatar>
+                    <ion-label>
+                      <h2>Anonimo</h2>
+                    </ion-label>
+                    <ion-radio></ion-radio>
+                    </ion-item>
+                    <ion-item (click)="AutoCompletar('tester@tester.com','555555')">
+                      <ion-avatar slot="start">
+                        <ion-img src="../../assets/Avatar/mujer3.jpg"></ion-img>
+                      </ion-avatar>
+                      <ion-label>
+                        <h2>Tester</h2>
+                      </ion-label>
+                      <ion-radio></ion-radio>
+                      </ion-item>
+            </ion-radio-group>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </ion-content>
+    
+    

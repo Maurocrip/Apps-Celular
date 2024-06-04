@@ -1,0 +1,51 @@
+.general
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button
+{
+    height: 99%;
+    width: 99%;
+    background: #2b2b2b;
+}
+
+ion-icon{
+    color: #6b0000;
+    height: 100%;
+    width: 100%;
+}
+
+ion-modal {
+    --height: 40%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: rgb(87, 0, 0);
+    --color: white;
+  }
+  ion-radio-group{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  ion-list{
+    height: 85%;
+  }
+
+  ion-item{
+    width: 100%;
+  }

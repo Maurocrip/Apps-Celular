@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Salas</ion-title>
+    <ion-button class="logOut" (click)="this.LogOut()" slot="end">
+    <label>Cerrar Sesión</label>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+  <div class="botones">
+    <button (click)="Pasar(1)" class="boton botonP">
+      <label style="font-size: xxx-large;">PPS-4A</label>
+    </button>
+    <button (click)="Pasar(2)" class="boton botonS">
+      <label style="font-size: xxx-large;">PPS-4B</label>
+    </button>
+  </div>
+</ion-content>

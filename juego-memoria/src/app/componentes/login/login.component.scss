@@ -1,0 +1,97 @@
+.general {
+    font-family: monospace;
+    min-height: 550px;
+    height: 100%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #c7a6ed;
+}
+.boddy
+{
+    --border-color: #1bff00;
+    --border-width: 1px;
+    --background: #5a189a;
+    --border-radius: 20px;
+    font-family: sans-serif;
+    display: flex;
+    --ion-font-family: auto;
+    padding: 2% 0% 3% 0%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+.centro{
+    height: 33%;
+    padding: 3%;
+    border-radius: 20px;
+    display: flex;
+    background: #8700ff;
+    flex-direction: column;
+    align-items: center;
+}
+
+ion-label{
+    color: #ffffff;
+    font-size: larger;
+}
+
+ion-button{
+    font-family: monospace;
+    height: 10%;
+    --color: black;
+    --background: #c5c5c5;
+}
+
+.login
+{
+    font-size: xx-large;
+}
+
+small
+{
+font-size: 150%;
+}
+
+.downside
+{
+    font-size: xx-large;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.boton
+{
+    position: absolute;
+    right: 2px;
+    top: 6px;
+}
+
+//-----modal-----
+
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: rgb(95 95 95);
+    --color: white;
+  }

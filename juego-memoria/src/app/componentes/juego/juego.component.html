@@ -1,0 +1,8 @@
+<ion-content>
+  <div class="backGround" [style.background]="this.background">
+    <button *ngFor="let item of this.arrayCartas; index as i;" id={{i}} (click)="Confirmar(item, i)" class={{this.clase}}>
+      <img *ngIf="!item.select" src={{this.dorso}}>
+      <img *ngIf="item.select" src={{item.path}}>
+    </button>
+  </div>
+</ion-content>

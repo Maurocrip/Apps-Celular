@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-toggle style="width: 13%;" slot="start">
+      <ion-button class="menu">
+        <ion-icon aria-hidden="true" slot="start" name="menu-outline" size="10px"></ion-icon>
+      </ion-button>
+    </ion-menu-toggle>
+    <ion-title>Mis fotos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<div>
+    <div class="background" *ngFor="let foto of arrayFotosFeas">
+      <div class="foto">
+        <h2>{{this.foto.Usuario}}</h2>
+        <img src={{this.foto.Path}}>
+      </div>
+      <div class="votos">
+        <label>{{this.foto.Day}}</label>
+        <label>{{this.foto.Hora}}</label>
+      </div>
+    </div>
+    <div class="background" *ngFor="let foto of arrayFotosLindas">
+      <div class="foto">
+        <h2>{{this.foto.Usuario}}</h2>
+        <img src={{this.foto.Path}}>
+      </div>
+      <div class="votos">
+        <label>{{this.foto.Day}}</label>
+        <label>{{this.foto.Hora}}</label>
+      </div>
+    </div>
+  </div>
+  
+</ion-content>

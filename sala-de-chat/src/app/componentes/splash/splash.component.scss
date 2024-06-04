@@ -1,0 +1,142 @@
+.bacground{
+    height: 100%;
+    background: linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0) 70.71%
+      ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .imagen
+  {
+    max-height: 100%;
+  }
+  .icono
+  {
+    max-height: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .nombre
+  {
+      width: 100%;
+  }
+  
+  h1 {
+      font-family: 'Times New Roman', sans-serif !important;
+      font-size: xx-large;
+      color: rgb(255, 255, 255);
+  }
+
+  //----------------------animaciones------------------------------------------------------------------------------------------------------------------------------------------
+
+  .swirl-out-bck {
+	-webkit-animation: swirl-out-bck 5s ease-in both;
+	        animation: swirl-out-bck 5s ease-in both;
+}
+@keyframes swirl-out-bck {
+    80% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+  }
+
+  .slide-out-blurred-tl {
+	-webkit-animation: slide-out-blurred-tl 5s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+	        animation: slide-out-blurred-tl 5s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
+}
+
+@keyframes slide-out-blurred-tl {
+    60% {
+      -webkit-transform: translate(0, 0) skew(0deg, 0deg);
+              transform: translate(0, 0) skew(0deg, 0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+              transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+                transform: translate(-1000px, -1000px) skew(80deg, 10deg);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+        -webkit-filter: blur(40px);
+                filter: blur(40px);
+        opacity: 0;
+      }
+  }
+
+  .roll-out-right {
+	-webkit-animation: roll-out-right 5s ease-in both;
+	        animation: roll-out-right 5s ease-in both;
+}
+  
+  
+@keyframes roll-out-right {
+    75% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    90% {
+        -webkit-transform: translateX(1000px) rotate(540deg);
+                transform: translateX(1000px) rotate(540deg);
+        opacity: 0;
+      }
+    100% {
+      -webkit-transform: translateX(1000px) rotate(540deg);
+              transform: translateX(1000px) rotate(540deg);
+      opacity: 0;
+    }
+  }
+
+  .swirl-out-top-bck {
+	-webkit-animation: swirl-out-top-bck 5s ease-in both;
+	        animation: swirl-out-top-bck 5s ease-in both;
+}
+
+@keyframes swirl-out-top-bck {
+    85% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 1;
+    }
+    95% {
+        -webkit-transform: rotate(-540deg) scale(0);
+                transform: rotate(-540deg) scale(0);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+        opacity: 0;
+      }
+    100% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      opacity: 0;
+    }
+  }

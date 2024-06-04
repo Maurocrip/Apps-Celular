@@ -1,0 +1,32 @@
+<ion-header *ngIf="!this.activado" [translucent]="true">
+  <ion-toolbar style=" padding-left: 1%;">
+    <ion-title slot="end">Alarma</ion-title>
+    <ion-button style="--background: #b76060;" slot="start" (click)="LogOut()"><ion-icon style="color: black; height: 1em; width: 1em;" name="log-out-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="general">
+    <button (click)="Activar()">
+      <ion-icon *ngIf="this.activado" style="color: brown;" name="lock-closed-outline"></ion-icon>
+      <ion-icon *ngIf="!this.activado" style="color: green;" name="lock-open-outline"></ion-icon>
+    </button>
+  </div>
+
+  <ion-modal [isOpen]="modalOpen">
+    <ng-template>
+      <ion-content>
+        <ion-toolbar>
+          <ion-title>Ingresar contraseña</ion-title>
+        </ion-toolbar>
+        <ion-list>
+          <ion-radio-group value="strawberries">
+            <ion-item>
+              <ion-input style="--padding-start: 7px" label="contraseña" label-placement="floating" mode="md" fill="solid" [(ngModel)]="contra"  type="password" placeholder="micontraseña"></ion-input>
+            </ion-item>
+            <ion-button style="width: 90%;" (click)="Desactivar()">Confirmar</ion-button>
+            </ion-radio-group>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+</ion-content>

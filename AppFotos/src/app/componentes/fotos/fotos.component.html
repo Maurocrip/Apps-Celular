@@ -1,0 +1,14 @@
+<div class="background">
+  <div class="foto">
+    <h2>{{this.foto.Usuario}}</h2>
+    <img src={{this.foto.Path}}>
+  </div>
+  <div class="votos">
+    <label>{{this.foto.Day}}</label>
+    <button (click)="Votacion(true)">
+      <ion-icon *ngIf="!this.voto" name="heart-outline"></ion-icon>
+      <ion-icon *ngIf="this.voto" name="heart" color="danger"></ion-icon>
+    </button>
+    <label>{{this.foto.Hora}}</label>
+  </div>
+</div>

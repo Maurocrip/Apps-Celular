@@ -1,0 +1,34 @@
+<ion-content>
+  <div class="background">
+
+    <div class="titulo">
+      <h1>SALAS DE CHARLAS</h1>
+    </div>
+
+    <div class="centrar">
+      <div class="subtitulo">
+        <h2>Iniciar sesión</h2>
+      </div>
+      <div class="inputs">
+        <form [formGroup]="grupo">
+          <ion-input  mode="md" errorText="Formato de correo invalido" [(ngModel)]="email" ngModel email formControlName="email" label-placement="floating"  label="Correo Electrónico" [clearInput]="true" placeholder="micorreo@hotmail.com"></ion-input>
+    
+          <ion-input  mode="md" errorText="Falta contraseña" formControlName="contraseña" [(ngModel)]="contra" label-placement="floating"  label="contraseña" type="password" placeholder="micontraseña"></ion-input>
+        </form>
+      </div>
+      <div class="boton">
+        <button (click)="LogIn()" class="ingresar">Ingresar</button>
+      </div>
+      <div class="imagen">
+        <img src="../../../assets/icon/icono.png">
+      </div>
+      <div class="accesoRapido">
+        <button (click)="Rellenar('admin@admin.com','111111')" class="botones">admin</button>
+        <button (click)="Rellenar('usuario@usuario.com','333333')" class="botones">usuario</button>
+        <button (click)="Rellenar('anonimo@anonimo.com','444444')" class="botones">anonimo</button>
+        <button (click)="Rellenar('tester@tester.com','555555')" class="botones">tester</button>
+        <button (click)="Rellenar('invitado@invitado.com','222222')" class="botones">invitado</button>
+      </div>
+    </div>
+  </div>
+</ion-content>

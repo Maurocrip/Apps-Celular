@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Juego de la memoria
+    </ion-title>
+    <ion-button slot="end" (click)="LogOut()"><ion-icon name="log-out-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="backGround">
+    <div class="titulo">
+      <div class="carrusel">
+        <button class="arrow prev" (click)="prevSlide()">←</button>
+
+        <div class="carousel">
+          <div class="table-slide" [ngClass]="{ 'active': currentIndex === 0 }">
+            <ion-grid style="width: 100%;">
+              <ion-row>
+                <ion-col class="tituloTablaF">FÁCIL</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="subTituloF">n°</ion-col>
+                <ion-col class="subTituloF">Nombre</ion-col>
+                <ion-col class="subTituloF">Tiempo</ion-col>
+              </ion-row>
+              <ion-row *ngFor="let item of arrayFacil, index as i">
+                <ion-col class="filasF">{{i+1}}</ion-col>
+                <ion-col class="filasF">{{item.Usuario}}</ion-col>
+                <ion-col class="filasF">{{item.Tiempo | teimpo}}</ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+
+          <div class="table-slide"  [ngClass]="{ 'active': currentIndex === 1 }">
+            <ion-grid style="width: 100%;">
+              <ion-row>
+                <ion-col class="tituloTablaM">MEDIO</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="subTituloM">n°</ion-col>
+                <ion-col class="subTituloM">Nombre</ion-col>
+                <ion-col class="subTituloM">Tiempo</ion-col>
+              </ion-row>
+              <ion-row *ngFor="let item of arrayMedio, index as i">
+                <ion-col class="filasM">{{i+1}}</ion-col>
+                <ion-col class="filasM">{{item.Usuario}}</ion-col>
+                <ion-col class="filasM">{{item.Tiempo | teimpo}}</ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+
+          <div class="table-slide" [ngClass]="{ 'active': currentIndex === 2 }">
+            <ion-grid style="width: 100%;">
+              <ion-row>
+                <ion-col class="tituloTablaD">DIFÍCIL</ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col class="subTituloD">n°</ion-col>
+                <ion-col class="subTituloD">Nombre</ion-col>
+                <ion-col class="subTituloD">Tiempo</ion-col>
+              </ion-row>
+              <ion-row *ngFor="let item of arrayDificil, index as i">
+                <ion-col class="filasD">{{i+1}}</ion-col>
+                <ion-col class="filasD">{{item.Usuario}}</ion-col>
+                <ion-col class="filasD">{{item.Tiempo | teimpo}}</ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </div>
+
+        <button class="arrow next"  (click)="nextSlide()">→</button>
+      </div>
+    
+    
+    </div>
+    <div class="Dificultad">
+      <h4>Elija una dificultad para jugar</h4>
+      <button class="subTituloF" (click)="Empezar('facil')">Fácil</button>
+      <button class="subTituloM" (click)="Empezar('medio')">Medio</button>
+      <button class="subTituloD" (click)="Empezar('dificil')">Difícil</button>
+    </div>
+  </div>
+</ion-content>
