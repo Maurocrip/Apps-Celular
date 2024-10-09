@@ -13,8 +13,7 @@ Este repositorio contiene una colección de aplicaciones para dispositivos móvi
 Para poder ejecutar estas aplicaciones, asegúrate de tener instalados:
 
 - [Node.js](https://nodejs.org/)
-- [Framework específico, ej. React Native, Flutter, etc.]
-- [Dependencias adicionales si aplica]
+- [Ionic](https://ionicframework.com)
 
 ## Instalación 🚀
 
