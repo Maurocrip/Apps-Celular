@@ -6,7 +6,7 @@ Este repositorio contiene una colección de aplicaciones para dispositivos móvi
 
 Este repositorio contiene las siguientes aplicaciones, cada una con un propósito específico:
 
-- **Alarma**: Una aplicación simple para establecer alarmas. Permite a los usuarios configurar alarmas en horarios específicos para recordar tareas importantes.
+- **Alarma**: Una aplicación de alarma diseñada para prevenir robos de celulares. Al activar la alarma, se emite un sonido fuerte si alguien intenta mover o quitar el dispositivo, alertando al usuario sobre un posible robo.
 
 - **App Fotos**: Permite subir fotos en dos secciones (fotos lindas o feas) y luego visualizar una lista de las diferentes fotos subidas. Los usuarios pueden votar si están de acuerdo con la clasificación de las fotos.
 
@@ -17,6 +17,7 @@ Este repositorio contiene las siguientes aplicaciones, cada una con un propósit
 - **Sala de Chat**: Una aplicación que permite a los usuarios comunicarse en tiempo real en una sala de chat. Facilita la interacción entre los usuarios mediante mensajes de texto.
 
 Cada una de estas aplicaciones fue desarrollada como parte de un trabajo académico, y están diseñadas para ser intuitivas y educativas.
+
 
 ## Características 🛠️
 
