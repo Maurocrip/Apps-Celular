@@ -26,12 +26,16 @@ Cada una de estas aplicaciones fue desarrollada como parte de un trabajo académ
 - **Interfaz de usuario intuitiva**: Diseñadas para mejorar la experiencia del usuario en dispositivos móviles.
 - **Código modular**: Las aplicaciones están organizadas en módulos independientes para facilitar su mantenimiento.
 
-## Requisitos 📋
-
-Para poder ejecutar estas aplicaciones, asegúrate de tener instalados:
-
+## Herramientas y lenguajes 📋
+Este proyecto fue desarrollado utilizando:
 - [Node.js](https://nodejs.org/)
 - [Ionic](https://ionicframework.com)
+- [Angular](https://docs.angular.lat)
+- TypeScript
+- Firebase
+
+para el diseño. loguica, gestion de la autenticación y almacenamiento de datos.
+
 
 ## Uso 📲
 
