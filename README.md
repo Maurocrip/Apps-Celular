@@ -1,6 +1,6 @@
 # Apps Celular 📱
 
-Este repositorio contiene una colección de aplicaciones para dispositivos móviles desarrolladas en [tecnología o marco específico que usaste, ej. React Native, Flutter, etc.]. Cada aplicación ofrece una funcionalidad única y está diseñada para brindar una experiencia de usuario fluida y óptima en dispositivos móviles.
+Este repositorio contiene una colección de aplicaciones para dispositivos móviles desarrolladas en Angular e ionic. Cada aplicación ofrece una funcionalidad única y está diseñada para brindar una experiencia de usuario fluida y óptima en dispositivos móviles.
 
 ## Características 🛠️
 
