@@ -15,11 +15,15 @@ Para poder ejecutar estas aplicaciones, asegúrate de tener instalados:
 - [Node.js](https://nodejs.org/)
 - [Ionic](https://ionicframework.com)
 
-## Instalación 🚀
+## Uso 📲
 
-Sigue estos pasos para clonar y ejecutar las aplicaciones en tu dispositivo:
+1. Conecta tu dispositivo móvil o usa un emulador.
+2. Ejecuta el proyecto y sigue las instrucciones para iniciar la aplicación en tu dispositivo.
+3. Explora las diferentes funcionalidades de cada aplicación.
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/Maurocrip/Apps-Celular.git
+## Contacto
 
+Si tienes preguntas o sugerencias, no dudes en ponerte en contacto conmigo:
+
+- **Email**: mauroracioppi@gmail.com
+- **GitHub**: [Mauro Racioppi](https://github.com/Maurocrip)
