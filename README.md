@@ -1,6 +1,7 @@
 # Apps Celular 📱
 
-Este repositorio contiene una colección de aplicaciones para dispositivos móviles desarrolladas en Angular e ionic. Cada aplicación ofrece una funcionalidad única y está diseñada para brindar una experiencia de usuario fluida y óptima en dispositivos móviles.
+Este repositorio contiene una colección de aplicaciones para dispositivos móviles desarrolladas como parte de un proyecto académico utilizando Angular e Ionic. Cada aplicación ofrece una funcionalidad única y está diseñada para brindar una experiencia de usuario fluida y óptima en dispositivos móviles.
+
 
 ## Aplicaciones Incluidas 📱
 
@@ -35,7 +36,7 @@ Para poder ejecutar estas aplicaciones, asegúrate de tener instalados:
 ## Uso 📲
 
 1. Conecta tu dispositivo móvil o usa un emulador.
-2. Ejecuta el proyecto y sigue las instrucciones para iniciar la aplicación en tu dispositivo.
+2. Ejecuta el proyecto en el dispositivo o instala su correspondiente apk.
 3. Explora las diferentes funcionalidades de cada aplicación.
 
 ## Contacto
